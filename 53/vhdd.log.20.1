@@ -1,0 +1,710 @@
+[20131218T17:44:29.419Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|0||watchdog] (Re)starting vhdd...
+[20131218T17:44:29.419Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|0||watchdog] Child vhdd is: 27295
+[20131218T17:44:29.420Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|0||http] Establishing inet domain server
+[20131218T17:44:29.422Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|0||attachments] Ignoring ENOENT while reading attachments file
+[20131218T17:44:29.423Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|9 inet-rpc||http] Request { frame = false; method = POST; uri = /internal; query = [  ]; content_length = [ 57 ]; transfer encoding = ; version = 1.0; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = ; user_agent = xen-api-libs/1.0 }
+[20131218T17:44:29.423Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|9 inet-rpc||vhdd] Internal handler
+[20131218T17:44:29.423Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|9 inet-rpc||vhdd] Call={"method": "Debug.get_pid", "params": [null], "id": 2579}
+[20131218T17:44:29.423Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|9 inet-rpc||vhdd] Response: {"result": 27295, "error": null, "id": 0}
+[20131218T17:44:29.424Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|12 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 204 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.424Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|12 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.424Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|12 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>SR.list</methodName><params><param><value><struct><member><name>dbg</name><value>wait_for_start</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.425Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|12 inet-rpc|82bb5fe0-29f0-42f8-8a03-157a4652f184|vhdd] Response: (omitted)
+[20131218T17:44:29.426Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 574 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.426Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.426Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>SR.create</methodName><params><param><value><struct><member><name>dbg</name><value>create_and_attach</value></member><member><name>sr</name><value>1</value></member><member><name>device_config</name><value><struct><member><name>SRmaster</name><value>true</value></member><member><name>device</name><value>/dev/dummy</value></member><member><name>reservation_mode</name><value>thin</value></member></struct></value></member><member><name>physical_size</name><value>0</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.426Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] write_label_and_pv_header:
+PV header:
+pvh_id: ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT
+pvh_device_size: 1099511627776
+pvh_areas1: {offset=10551296,size=0}
+pvh_areas2: {offset=4096,size=10547200}
+
+[20131218T17:44:29.454Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] Writing MDA header
+[20131218T17:44:29.541Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] Writing: checksum: 0
+magic:  LVM2 x[5A%r0N*>
+version: 1
+start: 4096
+size: 10485760
+raw_locns:[{offset:512,size:0,checksum:0,filler:0}]
+
+[20131218T17:44:29.545Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] PVs created
+[20131218T17:44:29.545Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] write_label_and_pv_header:
+PV header:
+pvh_id: ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT
+pvh_device_size: 1099511627776
+pvh_areas1: {offset=10551296,size=0}
+pvh_areas2: {offset=4096,size=10547200}
+
+[20131218T17:44:29.549Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] Writing MDA header
+[20131218T17:44:29.549Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] Writing: checksum: 0
+magic:  LVM2 x[5A%r0N*>
+version: 1
+start: 4096
+size: 10485760
+raw_locns:[{offset:512,size:511,checksum:-591127999,filler:0}]
+
+[20131218T17:44:29.549Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|mlvm] VG created
+[20131218T17:44:29.550Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|13 inet-rpc|1628944b-bc2c-44a0-8c4c-9327994f9330|vhdd] Response: (omitted)
+[20131218T17:44:29.554Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 515 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.554Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.554Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>SR.attach</methodName><params><param><value><struct><member><name>dbg</name><value>create_and_attach</value></member><member><name>sr</name><value>1</value></member><member><name>device_config</name><value><struct><member><name>SRmaster</name><value>true</value></member><member><name>device</name><value>/dev/dummy</value></member><member><name>reservation_mode</name><value>thin</value></member></struct></value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.555Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] init_lvm: Loading Vg from devices list: [/dev/dummy]
+[20131218T17:44:29.555Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Vg.load
+[20131218T17:44:29.555Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Label found: 
+Label header:
+id: LABELONE
+sector: 1
+crc: 1042912706
+offset: 32
+ty: LVM2 001
+
+PV Header:
+pvh_id: ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT
+pvh_device_size: 1099511627776
+pvh_areas1: {offset=10551296,size=0}
+pvh_areas2: {offset=4096,size=10547200}
+
+
+
+[20131218T17:44:29.555Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] init_lvm: Vg loaded:
+[20131218T17:44:29.555Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] VG_XenStorage-1 {
+id = "2jFmku-5Our-7A7L-x6vr-Soil-qcj3-oFLDqi"
+seqno = 1
+status = ["READ", "WRITE"]
+extent_size = 8192
+max_lv = 0
+max_pv = 0
+
+physical_volumes {
+
+pv0 {
+id = "ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT"
+device = "/dev/dummy"
+
+status = ["ALLOCATABLE"]
+dev_size = 2147483648
+pe_start = 20608
+pe_count = 262141
+}
+}
+
+logical_volumes {
+}
+}
+# Generated by MLVM version 0.1: 
+
+contents = "Text Format Volume Group"
+version = 1
+
+description = ""
+
+creation_host = "<need uname!>"
+creation_time = 1387388669
+
+
+[20131218T17:44:29.556Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] write_label_and_pv_header:
+PV header:
+pvh_id: ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT
+pvh_device_size: 1099511627776
+pvh_areas1: {offset=10551296,size=0}
+pvh_areas2: {offset=4096,size=10547200}
+
+[20131218T17:44:29.556Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Writing MDA header
+[20131218T17:44:29.557Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Writing: checksum: 317231351
+magic:  LVM2 x[5A%r0N*>
+version: 1
+start: 4096
+size: 10485760
+raw_locns:[{offset:1024,size:738,checksum:-362513240,filler:0}]
+
+[20131218T17:44:29.557Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] init_lvm: Redo log initialized:
+[20131218T17:44:29.557Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] VG_XenStorage-1 {
+id = "2jFmku-5Our-7A7L-x6vr-Soil-qcj3-oFLDqi"
+seqno = 2
+status = ["READ", "WRITE"]
+extent_size = 8192
+max_lv = 0
+max_pv = 0
+
+physical_volumes {
+
+pv0 {
+id = "ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT"
+device = "/dev/dummy"
+
+status = ["ALLOCATABLE"]
+dev_size = 2147483648
+pe_start = 20608
+pe_count = 262141
+}
+}
+
+logical_volumes {
+
+mlvm_redo_log {
+id = "rnHPWf-1fyZ-KaFL-S787-0pQg-pi9O-R4mc2e"
+status = ["READ", "VISIBLE"]
+segment_count = 1
+
+segment1 {
+start_extent = 0
+extent_count = 1
+
+type = "striped"
+stripe_count = 1	#linear
+
+stripes = [
+"pv0", 0
+]
+}
+}
+}
+}
+# Generated by MLVM version 0.1: 
+
+contents = "Text Format Volume Group"
+version = 1
+
+description = ""
+
+creation_host = "<need uname!>"
+creation_time = 1387388669
+
+
+[20131218T17:44:29.557Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] add_pv_id_info: Got mutex
+[20131218T17:44:29.557Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] add_pv_id_info: Released mutex
+[20131218T17:44:29.558Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdSlave] VhdSlave.SR.attach
+[20131218T17:44:29.558Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|tapdisk] Tapdisk.scan
+[20131218T17:44:29.558Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|tapdisk] parse_tapdev_link: ..
+[20131218T17:44:29.558Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|tapdisk] parse_tapdev_link: .
+[20131218T17:44:29.558Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|attachments] attach as slave: 1
+[20131218T17:44:29.558Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|attachments] Ignoring ENOENT while reading attachments file
+[20131218T17:44:29.559Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdsm] mode=Master
+[20131218T17:44:29.559Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] m_rolling_upgrade=false
+[20131218T17:44:29.559Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] init_lvm: Loading Vg from devices list: [/dev/dummy]
+[20131218T17:44:29.559Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Vg.load
+[20131218T17:44:29.559Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Label found: 
+Label header:
+id: LABELONE
+sector: 1
+crc: 1042912706
+offset: 32
+ty: LVM2 001
+
+PV Header:
+pvh_id: ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT
+pvh_device_size: 1099511627776
+pvh_areas1: {offset=10551296,size=0}
+pvh_areas2: {offset=4096,size=10547200}
+
+
+
+[20131218T17:44:29.560Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Allocations for lv mlvm_redo_log:
+(pv0: [0,1])
+
+[20131218T17:44:29.560Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Redo.read
+[20131218T17:44:29.560Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] start_ofs: 12 end_ofs: 12 size: 0
+[20131218T17:44:29.560Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Reading from pos: 0
+[20131218T17:44:29.560Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Redo.read finished
+[20131218T17:44:29.560Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] init_lvm: Vg loaded:
+[20131218T17:44:29.560Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] VG_XenStorage-1 {
+id = "2jFmku-5Our-7A7L-x6vr-Soil-qcj3-oFLDqi"
+seqno = 2
+status = ["READ", "WRITE"]
+extent_size = 8192
+max_lv = 0
+max_pv = 0
+
+physical_volumes {
+
+pv0 {
+id = "ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT"
+device = "/dev/dummy"
+
+status = ["ALLOCATABLE"]
+dev_size = 2147483648
+pe_start = 20608
+pe_count = 262141
+}
+}
+
+logical_volumes {
+
+mlvm_redo_log {
+id = "rnHPWf-1fyZ-KaFL-S787-0pQg-pi9O-R4mc2e"
+status = ["READ", "VISIBLE"]
+segment_count = 1
+
+segment1 {
+start_extent = 0
+extent_count = 1
+
+type = "striped"
+stripe_count = 1	#linear
+
+stripes = [
+"pv0", 0
+]
+}
+}
+}
+}
+# Generated by MLVM version 0.1: 
+
+contents = "Text Format Volume Group"
+version = 1
+
+description = ""
+
+creation_host = "<need uname!>"
+creation_time = 1387388669
+
+
+[20131218T17:44:29.561Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] init_lvm: Redo log initialized:
+[20131218T17:44:29.561Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] VG_XenStorage-1 {
+id = "2jFmku-5Our-7A7L-x6vr-Soil-qcj3-oFLDqi"
+seqno = 2
+status = ["READ", "WRITE"]
+extent_size = 8192
+max_lv = 0
+max_pv = 0
+
+physical_volumes {
+
+pv0 {
+id = "ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT"
+device = "/dev/dummy"
+
+status = ["ALLOCATABLE"]
+dev_size = 2147483648
+pe_start = 20608
+pe_count = 262141
+}
+}
+
+logical_volumes {
+
+mlvm_redo_log {
+id = "rnHPWf-1fyZ-KaFL-S787-0pQg-pi9O-R4mc2e"
+status = ["READ", "VISIBLE"]
+segment_count = 1
+
+segment1 {
+start_extent = 0
+extent_count = 1
+
+type = "striped"
+stripe_count = 1	#linear
+
+stripes = [
+"pv0", 0
+]
+}
+}
+}
+}
+# Generated by MLVM version 0.1: 
+
+contents = "Text Format Volume Group"
+version = 1
+
+description = ""
+
+creation_host = "<need uname!>"
+creation_time = 1387388669
+
+
+[20131218T17:44:29.561Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] container initialised
+[20131218T17:44:29.561Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|scan] scan
+[20131218T17:44:29.561Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: mlvm_redo_log
+[20131218T17:44:29.561Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: mlvm_redo_log
+[20131218T17:44:29.561Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=7f0cad40-09f0-4c46-a501-6ebca7a411ad (use_tmp=true)
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|scan] Reading VHD: /tmp/dummytest/1/dev/mapper/7f0cad40-09f0-4c46-a501-6ebca7a411ad
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] LVM REDO: 000000000113„•¦¾   ]      -   $ B 0host_attachments 	&wxnYZR-qJvw-PHSm-iOEn-VpNN-qLCv-3oBssi  #pv0 _j        _j        @
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: host_attachments
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=125b747a-f847-4815-925c-8889dba08b50 (use_tmp=true)
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: host_attachments
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: Got the mutex
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] LV VG_XenStorage--1-host_attachments not attached: attaching. refcount now 1
+[20131218T17:44:29.562Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=VG_XenStorage--1-host_attachments (use_tmp=false)
+[20131218T17:44:29.563Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: released the mutex
+[20131218T17:44:29.563Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Remove LV: refcount for dm=VG_XenStorage--1-host_attachments is now 0
+[20131218T17:44:29.563Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Removing LV=VG_XenStorage--1-host_attachments
+[20131218T17:44:29.563Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] LVM REDO: 000000000115„•¦¾   _      -   $ C 2id_to_leaf_mapping 	&L7Tyhc-OwAM-Ejzj-21UZ-5hfw-R6kJ-j0URsm  #pv0 _j        _j        @
+[20131218T17:44:29.563Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: id_to_leaf_mapping
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=becc3d7b-517e-49be-8f22-e30f485f4a9a (use_tmp=true)
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: id_to_leaf_mapping
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: Got the mutex
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] LV VG_XenStorage--1-id_to_leaf_mapping not attached: attaching. refcount now 1
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=VG_XenStorage--1-id_to_leaf_mapping (use_tmp=false)
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: released the mutex
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Remove LV: refcount for dm=VG_XenStorage--1-id_to_leaf_mapping is now 0
+[20131218T17:44:29.564Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Removing LV=VG_XenStorage--1-id_to_leaf_mapping
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] Selected provisioning policy: Thin
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: host_attachments
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: Got the mutex
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] LV VG_XenStorage--1-host_attachments not attached: attaching. refcount now 1
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=VG_XenStorage--1-host_attachments (use_tmp=false)
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: released the mutex
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Remove LV: refcount for dm=VG_XenStorage--1-host_attachments is now 0
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Removing LV=VG_XenStorage--1-host_attachments
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] Recovering any slaves
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|nmutex] wait: reason=Retrieving the hashtbl of attached hosts
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] About to get_localhost()
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] Creating the attach_part_two thread
+[20131218T17:44:29.565Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] About to iterate over attached slaves
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||vhdmaster] attach_part_two thread created
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdSlave] Registering with master
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|nmutex] wait: reason=Finding all attached/activated VDIs
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||nmutex] wait: reason=Checking whether resync is required
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||vhdmaster] Attach part two
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdmaster] Attach from host: 1, ip: 127.0.0.1
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||nmutex] wait: reason=Getting all the leaf infos
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||vhdmaster] Resolving map inconsistencies
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|slave_sr_attachments] Slave SR attach
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||vhdmaster] Resolved
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|nmutex] wait: reason=Adding host to the attached_hosts
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||nmutex] wait: reason=setting coalesce_in_progress flag
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: host_attachments
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||nmutex] wait: reason=Unsetting coalesce_in_progress flag
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: Got the mutex
+[20131218T17:44:29.566Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||nmutex] About to broadcast
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] LV VG_XenStorage--1-host_attachments not attached: attaching. refcount now 1
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|15||nmutex] Done
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=VG_XenStorage--1-host_attachments (use_tmp=false)
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: released the mutex
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Remove LV: refcount for dm=VG_XenStorage--1-host_attachments is now 0
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Removing LV=VG_XenStorage--1-host_attachments
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|nmutex] wait: reason=Resyncing VDI attachments/activations
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdSlave] Registration functions finished. Setting s_ready=true
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdsm] s_ready for the slave is: true
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|lvmabs] operating on vg: VG_XenStorage-1 lv: host_attachments
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: Got the mutex
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] LV VG_XenStorage--1-host_attachments not attached: attaching. refcount now 1
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|mlvm] Using dm_name=VG_XenStorage--1-host_attachments (use_tmp=false)
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] attach_lv: released the mutex
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Remove LV: refcount for dm=VG_XenStorage--1-host_attachments is now 0
+[20131218T17:44:29.567Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|host] Removing LV=VG_XenStorage--1-host_attachments
+[20131218T17:44:29.568Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|14 inet-rpc|81ce5718-5873-4819-be95-4ea9cbd7de33|vhdd] Response: (omitted)
+[20131218T17:44:29.578Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|16 inet-rpc||http] Request { frame = false; method = POST; uri = /internal; query = [  ]; content_length = [ 55 ]; transfer encoding = ; version = 1.0; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = ; user_agent = xen-api-libs/1.0 }
+[20131218T17:44:29.578Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|16 inet-rpc||vhdd] Internal handler
+[20131218T17:44:29.578Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|16 inet-rpc||vhdd] Call={"method": "SR.mode", "params": [{"sr": "1"}], "id": 1}
+[20131218T17:44:29.578Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|16 inet-rpc||vhdd] Response: {"result": "Master", "error": null, "id": 0}
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||http] Request { frame = false; method = POST; uri = /internal; query = [  ]; content_length = [ 137 ]; transfer encoding = ; version = 1.0; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = ; user_agent = xen-api-libs/1.0 }
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||vhdd] Internal handler
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||vhdd] Call={"method": "SR.slave_attach", "params": [{"sr": "1", "host": {"h_uuid": "2", "h_ip": "127.0.0.1", "h_port": 4095}, "vdis": {}}], "id": 2}
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||vhdmaster] Attach from host: 2, ip: 127.0.0.1
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||slave_sr_attachments] Slave SR attach
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||nmutex] wait: reason=Adding host to the attached_hosts
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||lvmabs] operating on vg: VG_XenStorage-1 lv: host_attachments
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||host] attach_lv: Got the mutex
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||host] LV VG_XenStorage--1-host_attachments not attached: attaching. refcount now 1
+[20131218T17:44:29.581Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||mlvm] Using dm_name=VG_XenStorage--1-host_attachments (use_tmp=false)
+[20131218T17:44:29.582Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||host] attach_lv: released the mutex
+[20131218T17:44:29.582Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||host] Remove LV: refcount for dm=VG_XenStorage--1-host_attachments is now 0
+[20131218T17:44:29.582Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||host] Removing LV=VG_XenStorage--1-host_attachments
+[20131218T17:44:29.582Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||nmutex] wait: reason=Resyncing VDI attachments/activations
+[20131218T17:44:29.582Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|17 inet-rpc||vhdd] Response: {"result": "OK", "error": null, "id": 0}
+[20131218T17:44:29.584Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 1207 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.584Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.584Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>VDI.create</methodName><params><param><value><struct><member><name>dbg</name><value>create_vdi</value></member><member><name>sr</name><value>1</value></member><member><name>vdi_info</name><value><struct><member><name>vdi</name><value>vdi</value></member><member><name>content_id</name><value></value></member><member><name>name_label</name><value>ftest_vdi</value></member><member><name>name_description</name><value></value></member><member><name>ty</name><value>user</value></member><member><name>metadata_of_pool</name><value></value></member><member><name>is_a_snapshot</name><value><boolean>0</boolean></value></member><member><name>snapshot_time</name><value></value></member><member><name>snapshot_of</name><value></value></member><member><name>read_only</name><value><boolean>0</boolean></value></member><member><name>virtual_size</name><value>52428800</value></member><member><name>physical_utilisation</name><value>0</value></member><member><name>persistent</name><value><boolean>1</boolean></value></member><member><name>sm_config</name><value><struct></struct></value></member></struct></value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.585Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdsm] API call: VDI.create sr=1 size=52428800 sm_config=[]
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdutil] Dump size: overhead=4312576 phys_size=4312576 virtual_size=52428800 critical_size=109170176
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdutil] leaf_status: Some false reservation_type: Thin
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|mlvm] LVM REDO: 000000000138„•¦¾   v      3   ' D 	(VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680 	&xAWPRb-ceku-Maqv-OjfG-HSDt-rmZp-t9mdDz  #pv0 _j        _j        @
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] attach_lv: Got the mutex
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] LV VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680 not attached: attaching. refcount now 1
+[20131218T17:44:29.585Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|mlvm] Using dm_name=VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680 (use_tmp=false)
+[20131218T17:44:29.586Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] attach_lv: released the mutex
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdutil] query_size_vhd: Querying size of VHD 103774ac-1579-4e5c-891e-cfc0388d54ba
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdutil] query_size_vhd: get_phys_size returned 4311040
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdutil] query_size_vhd: first_allocated_block=None
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdutil] query_size_vhd: virtual_size=52428800
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|nmutex] wait: reason=Adding VHD uid='103774ac-1579-4e5c-891e-cfc0388d54ba'
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] Remove LV: refcount for dm=VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680 is now 0
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] Removing LV=VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|nmutex] wait: reason=Adding a new ID to the mapping (b3e59637-f761-4e98-a0ed-14f7bef156cb->PVhd '103774ac-1579-4e5c-891e-cfc0388d54ba')
+[20131218T17:44:29.624Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|lvmabs] operating on vg: VG_XenStorage-1 lv: id_to_leaf_mapping
+[20131218T17:44:29.625Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] attach_lv: Got the mutex
+[20131218T17:44:29.625Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] LV VG_XenStorage--1-id_to_leaf_mapping not attached: attaching. refcount now 1
+[20131218T17:44:29.625Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|mlvm] Using dm_name=VG_XenStorage--1-id_to_leaf_mapping (use_tmp=false)
+[20131218T17:44:29.625Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] attach_lv: released the mutex
+[20131218T17:44:29.625Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] Remove LV: refcount for dm=VG_XenStorage--1-id_to_leaf_mapping is now 0
+[20131218T17:44:29.625Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|host] Removing LV=VG_XenStorage--1-id_to_leaf_mapping
+[20131218T17:44:29.625Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|18 inet-rpc|a47b9a78-70c6-45a3-a4a8-2c87e1f388c6|vhdd] Response: (omitted)
+[20131218T17:44:29.626Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 486 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>VDI.attach</methodName><params><param><value><struct><member><name>dbg</name><value>dbg</value></member><member><name>dp</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member><member><name>sr</name><value>1</value></member><member><name>vdi</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member><member><name>read_write</name><value><boolean>1</boolean></value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.627Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdsm] API call: VDI.attach sr=1 vdi=b3e59637-f761-4e98-a0ed-14f7bef156cb writable=true
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Adding to current_operations
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Checking current ops
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Finding whether we're already attached
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Retrieving the hashtbl of attached hosts
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdmaster] Got to the slave_attach function call
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Executing with operation '"OpAttaching"'
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Getting VHD uid='103774ac-1579-4e5c-891e-cfc0388d54ba'
+[20131218T17:44:29.627Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdMaster_utils] Resizing VHD uid: 103774ac-1579-4e5c-891e-cfc0388d54ba
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|mlvm] Using dm_name=6ea22d1a-74e2-4394-98cc-4e2384cd0f32 (use_tmp=true)
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdutil] Dump size: overhead=4311040 phys_size=4311040 virtual_size=52428800 critical_size=56739840
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdutil] leaf_status: Some true reservation_type: Thin
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdMaster_utils] new_size=old_size=58720256. Not doing anything
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Update id_map
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|locking] update_leaf: vdi_location=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Finished op '"OpAttaching"'. Removing from cur
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] About to broadcast
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] Done
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Getting a copy of a VHD chain
+[20131218T17:44:29.628Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Got response: leaf=/tmp/dummytest/1//dev/mapper/VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Adding to master_approved_ops
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Checking current ops
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] LV name: VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|host] attach_lv: Got the mutex
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|host] LV VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680 not attached: attaching. refcount now 1
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|mlvm] Using dm_name=VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680 (use_tmp=false)
+[20131218T17:44:29.629Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|host] attach_lv: released the mutex
+[20131218T17:44:29.630Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] s_mutex lock: attach_from_sai
+[20131218T17:44:29.630Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Adding info to s_attached_vdis
+[20131218T17:44:29.630Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.630Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Removing from master_approved_ops
+[20131218T17:44:29.630Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Removing my current op
+[20131218T17:44:29.630Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.630Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] About to broadcast
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] Done
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] wait: reason=Removing from current_operations
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Removing my current op
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] About to broadcast
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|nmutex] Done
+[20131218T17:44:29.631Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|19 inet-rpc|5da69597-8cc4-4a90-9c3e-4c2ad2d318b5|vhdd] Response: (omitted)
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||http] Request { frame = false; method = POST; uri = /internal; query = [  ]; content_length = [ 169 ]; transfer encoding = ; version = 1.0; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = ; user_agent = xen-api-libs/1.0 }
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||vhdd] Internal handler
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||vhdd] Call={"method": "VDI.slave_attach", "params": [{"host_uuid": "2", "sr": "1", "vdi": "b3e59637-f761-4e98-a0ed-14f7bef156cb", "writable": true, "is_reattach": false}], "id": 3}
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] wait: reason=Retrieving the hashtbl of attached hosts
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||vhdmaster] Got to the slave_attach function call
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] wait: reason=Executing with operation '"OpAttaching"'
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] wait: reason=Update id_map
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||locking] update_leaf: vdi_location=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] wait: reason=Finished op '"OpAttaching"'. Removing from cur
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] About to broadcast
+[20131218T17:44:29.634Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] Done
+[20131218T17:44:29.635Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||nmutex] wait: reason=Getting a copy of a VHD chain
+[20131218T17:44:29.635Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.635Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.635Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.635Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|20 inet-rpc||vhdd] Response: {"result": {"sa_leaf_path": "\/dev\/mapper\/VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680", "sa_leaf_maxsize": 58720256, "sa_leaf_phys_size": 4311040, "sa_leaf_is_raw": false, "sa_writable": true, "sa_lvs": [["Mlvm", {"dmn_dm_name": "VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680", "dmn_mapping": {"m": [{"start": 0, "len": 114688, "map": ["Linear", {"device": ["Dereferenced", "ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT"], "offset": 45184}]}]}}]]}, "error": null, "id": 0}
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 413 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>VDI.activate</methodName><params><param><value><struct><member><name>dbg</name><value>dbg</value></member><member><name>dp</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member><member><name>sr</name><value>1</value></member><member><name>vdi</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.639Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdsm] API call: VDI.activate sr=1 vdi=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Adding to current_operations
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Checking current ops
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.639Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Checking whether the VDI is activated
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Executing with operation '"OpActivating"'
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Update id_map
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|locking] update_leaf: vdi_location=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Finished op '"OpActivating"'. Removing from cur
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] About to broadcast
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] Done
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Adding to master_approved_ops
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Checking current ops
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Activating tapdisk
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|tapdisk_listen] Registered to listen to /dev/shm/1_1_b3e59637-f761-4e98-a0ed-14f7bef156cb.stats
+[20131218T17:44:29.640Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Setting maxsize in shared page
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Setting maxsize=58720256
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Removing from master_approved_ops
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Removing my current op
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] About to broadcast
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] Done
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] wait: reason=Removing from current_operations
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Removing my current op
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] About to broadcast
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|nmutex] Done
+[20131218T17:44:29.641Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|21 inet-rpc|7334e01e-dccd-4032-9265-856f76037404|vhdd] Response: (omitted)
+[20131218T17:44:29.643Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||http] Request { frame = false; method = POST; uri = /internal; query = [  ]; content_length = [ 155 ]; transfer encoding = ; version = 1.0; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = ; user_agent = xen-api-libs/1.0 }
+[20131218T17:44:29.643Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||vhdd] Internal handler
+[20131218T17:44:29.643Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||vhdd] Call={"method": "VDI.slave_activate", "params": [{"host_uuid": "2", "sr": "1", "vdi": "b3e59637-f761-4e98-a0ed-14f7bef156cb", "is_reactivate": false}], "id": 4}
+[20131218T17:44:29.643Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||nmutex] wait: reason=Executing with operation '"OpActivating"'
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||nmutex] wait: reason=Update id_map
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||locking] update_leaf: vdi_location=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||nmutex] wait: reason=Finished op '"OpActivating"'. Removing from cur
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||nmutex] About to broadcast
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||nmutex] Done
+[20131218T17:44:29.644Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|22 inet-rpc||vhdd] Response: {"result": null, "error": ["IntError", ["vdi_active_elsewhere", ["b3e59637-f761-4e98-a0ed-14f7bef156cb"]]], "id": 0}
+[20131218T17:44:29.646Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 415 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.646Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.647Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>VDI.deactivate</methodName><params><param><value><struct><member><name>dbg</name><value>dbg</value></member><member><name>dp</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member><member><name>sr</name><value>1</value></member><member><name>vdi</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.647Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdsm] API call: VDI.deactivate sr=1 vdi=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.647Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.647Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Adding to current_operations
+[20131218T17:44:29.647Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdSlave] Checking current ops
+[20131218T17:44:29.647Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.647Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Deactivating
+[20131218T17:44:29.647Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|tapdisk_listen] Unregistering 1/b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Executing with operation '"OpDeactivating"'
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Update id_map
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|locking] update_leaf: vdi_location=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Finished op '"OpDeactivating"'. Removing from cur
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] About to broadcast
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] Done
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] wait: reason=Removing from current_operations
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdSlave] Removing my current op
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] About to broadcast
+[20131218T17:44:29.648Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|nmutex] Done
+[20131218T17:44:29.649Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|23 inet-rpc|f1ffdd08-15e3-450d-a02b-6eed865b2fa8|vhdd] Response: (omitted)
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 411 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>VDI.detach</methodName><params><param><value><struct><member><name>dbg</name><value>dbg</value></member><member><name>dp</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member><member><name>sr</name><value>1</value></member><member><name>vdi</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.650Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdsm] API call: VDI.detach sr=1 vdi=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Adding to current_operations
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Checking current ops
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Checking we're attached
+[20131218T17:44:29.650Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Deactivating tapdisk if necessary
+[20131218T17:44:29.651Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.651Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Executing with operation '"OpDetaching"'
+[20131218T17:44:29.651Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.651Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Update id_map
+[20131218T17:44:29.651Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|locking] update_leaf: vdi_location=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Finished op '"OpDetaching"'. Removing from cur
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] About to broadcast
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] Done
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Adding to master_approved_ops
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Checking current ops
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Reloading attach info
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|host] Remove LV: refcount for dm=VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680 is now 0
+[20131218T17:44:29.654Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|host] Removing LV=VG_XenStorage--1-VHD--4a7f0aa7--39a0--4e07--bef1--a2d4a9b44680
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Removing attach info
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Removing from master_approved_ops
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Removing my current op
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] About to broadcast
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] Done
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] wait: reason=Removing from current_operations
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Removing my current op
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] About to broadcast
+[20131218T17:44:29.655Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|nmutex] Done
+[20131218T17:44:29.656Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|24 inet-rpc|48808776-f2ef-4f2b-976b-5ef6217628d7|vhdd] Response: (omitted)
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||http] Request { frame = false; method = POST; uri = /internal; query = [  ]; content_length = [ 129 ]; transfer encoding = ; version = 1.0; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = ; user_agent = xen-api-libs/1.0 }
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||vhdd] Internal handler
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||vhdd] Call={"method": "VDI.slave_detach", "params": [{"host_uuid": "2", "sr": "1", "vdi": "b3e59637-f761-4e98-a0ed-14f7bef156cb"}], "id": 5}
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] wait: reason=Executing with operation '"OpDetaching"'
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] wait: reason=Locked get leaf info
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] wait: reason=Update id_map
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||locking] update_leaf: vdi_location=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.659Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] wait: reason=Getting VHD uid='103774ac-1579-4e5c-891e-cfc0388d54ba'
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||vhdMaster_utils] Resizing VHD uid: 103774ac-1579-4e5c-891e-cfc0388d54ba
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||mlvm] Using dm_name=e1e13c9b-5b01-49ec-a7e3-fe382e09eed3 (use_tmp=true)
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||vhdutil] Dump size: overhead=4311040 phys_size=4311040 virtual_size=52428800 critical_size=56739840
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||vhdutil] leaf_status: Some false reservation_type: Thin
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||lvmabs] operating on vg: VG_XenStorage-1 lv: VHD-4a7f0aa7-39a0-4e07-bef1-a2d4a9b44680
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||vhdMaster_utils] new_size=old_size=58720256. Not doing anything
+[20131218T17:44:29.660Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] wait: reason=Finished op '"OpDetaching"'. Removing from cur
+[20131218T17:44:29.661Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] About to broadcast
+[20131218T17:44:29.661Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||nmutex] Done
+[20131218T17:44:29.661Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|25 inet-rpc||vhdd] Response: {"result": null, "error": null, "id": 0}
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 422 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>VDI.deactivate</methodName><params><param><value><struct><member><name>dbg</name><value>detach_all</value></member><member><name>dp</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member><member><name>sr</name><value>1</value></member><member><name>vdi</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.670Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdsm] API call: VDI.deactivate sr=1 vdi=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|nmutex] wait: reason=Adding to current_operations
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdSlave] Checking current ops
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|nmutex] wait: reason=Deactivating
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|nmutex] wait: reason=Removing from current_operations
+[20131218T17:44:29.670Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdSlave] Removing my current op
+[20131218T17:44:29.671Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.671Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|nmutex] About to broadcast
+[20131218T17:44:29.671Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|nmutex] Done
+[20131218T17:44:29.671Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|26 inet-rpc|24cf7bcd-92f7-4804-af13-1be359aee7bd|vhdd] Response: (omitted)
+[20131218T17:44:29.672Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 418 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.672Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.672Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>VDI.detach</methodName><params><param><value><struct><member><name>dbg</name><value>detach_all</value></member><member><name>dp</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member><member><name>sr</name><value>1</value></member><member><name>vdi</name><value>b3e59637-f761-4e98-a0ed-14f7bef156cb</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.672Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdsm] API call: VDI.detach sr=1 vdi=b3e59637-f761-4e98-a0ed-14f7bef156cb
+[20131218T17:44:29.672Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdSlave] s_mutex lock: with_op_inner
+[20131218T17:44:29.672Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|nmutex] wait: reason=Adding to current_operations
+[20131218T17:44:29.672Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdSlave] Checking current ops
+[20131218T17:44:29.672Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdSlave] Adding my current op to the current_ops hashtbl
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|nmutex] wait: reason=Checking we're attached
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdSlave] s_mutex lock: with_op_inner finally clause
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|nmutex] wait: reason=Removing from current_operations
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdSlave] Removing my current op
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdSlave] Broadcasting to wake up other threads
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|nmutex] About to broadcast
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|nmutex] Done
+[20131218T17:44:29.673Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|27 inet-rpc|1b430732-33a3-4e10-895f-95f6229cdebf|vhdd] Response: (omitted)
+[20131218T17:44:29.674Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc||http] Request { frame = false; method = POST; uri = /lvmnew; query = [  ]; content_length = [ 250 ]; transfer encoding = ; version = 1.1; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = 127.0.0.1:4094; user_agent = ./ftests }
+[20131218T17:44:29.674Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc||vhdd] path=lvmnew
+[20131218T17:44:29.674Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc||vhdd] Request: <?xml version="1.0"?><methodCall><methodName>SR.detach</methodName><params><param><value><struct><member><name>dbg</name><value>detach_all</value></member><member><name>sr</name><value>1</value></member></struct></value></param></params></methodCall>
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|lvmabs] operating on vg: VG_XenStorage-1 lv: host_attachments
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|host] attach_lv: Got the mutex
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|host] LV VG_XenStorage--1-host_attachments not attached: attaching. refcount now 1
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|mlvm] Using dm_name=VG_XenStorage--1-host_attachments (use_tmp=false)
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|host] attach_lv: released the mutex
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|host] Remove LV: refcount for dm=VG_XenStorage--1-host_attachments is now 0
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|host] Removing LV=VG_XenStorage--1-host_attachments
+[20131218T17:44:29.675Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|mlvm] write_label_and_pv_header:
+PV header:
+pvh_id: ZFqjwO-bofe-C2Kk-s557-PD86-ZFXH-6eYpdT
+pvh_device_size: 1099511627776
+pvh_areas1: {offset=10551296,size=0}
+pvh_areas2: {offset=4096,size=10547200}
+
+[20131218T17:44:29.676Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|mlvm] Writing MDA header
+[20131218T17:44:29.676Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|mlvm] Writing: checksum: -1727632388
+magic:  LVM2 x[5A%r0N*>
+version: 1
+start: 4096
+size: 10485760
+raw_locns:[{offset:2048,size:1455,checksum:-1607286769,filler:0}]
+
+[20131218T17:44:29.676Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|host] remove_pv_id_info: Got mutex
+[20131218T17:44:29.677Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|host] remove_pv_id_info: Released mutex
+[20131218T17:44:29.677Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|28 inet-rpc|820dc706-af2d-4763-97dd-2331b9975aab|vhdd] Response: (omitted)
+[20131218T17:44:29.678Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|29 inet-rpc||http] Request { frame = false; method = POST; uri = /internal; query = [  ]; content_length = [ 67 ]; transfer encoding = ; version = 1.0; cookie = [ = ]; task = ; subtask_of = ; content-type = ; host = ; user_agent = xen-api-libs/1.0 }
+[20131218T17:44:29.678Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|29 inet-rpc||vhdd] Internal handler
+[20131218T17:44:29.678Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|29 inet-rpc||vhdd] Call={"method": "Debug.die", "params": [{"restart": false}], "id": 2580}
+[20131218T17:44:29.678Z|debug|testing-worker-linux-7-2-6507-linux-19-15659603|29 inet-rpc||vhdsm] Got instruction to die with restart=false
+[20131218T17:44:29.680Z| info|testing-worker-linux-7-2-6507-linux-19-15659603|0||watchdog] received exit code 0. Not restarting.
